@@ -16,6 +16,7 @@
 		A52B77E72466091E00EE143E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52B77E52466091E00EE143E /* LaunchScreen.storyboard */; };
 		A5FEC2A4246B6A9300DC607E /* ProspectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FEC2A3246B6A9300DC607E /* ProspectsView.swift */; };
 		A5FEC2A6246B6AA300DC607E /* MeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FEC2A5246B6AA300DC607E /* MeView.swift */; };
+		A5FEC2A8246B6D9200DC607E /* Prospect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FEC2A7246B6D9200DC607E /* Prospect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		A52B77E82466091E00EE143E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5FEC2A3246B6A9300DC607E /* ProspectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProspectsView.swift; sourceTree = "<group>"; };
 		A5FEC2A5246B6AA300DC607E /* MeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeView.swift; sourceTree = "<group>"; };
+		A5FEC2A7246B6D9200DC607E /* Prospect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prospect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				A52B77D92466091D00EE143E /* SceneDelegate.swift */,
 				A52B77DE2466091D00EE143E /* ContentView.swift */,
 				A5FEC2A3246B6A9300DC607E /* ProspectsView.swift */,
+				A5FEC2A7246B6D9200DC607E /* Prospect.swift */,
 				A5FEC2A5246B6AA300DC607E /* MeView.swift */,
 				A52B77E02466091E00EE143E /* Assets.xcassets */,
 				A52B77E52466091E00EE143E /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				A5FEC2A6246B6AA300DC607E /* MeView.swift in Sources */,
 				A52B77D82466091D00EE143E /* AppDelegate.swift in Sources */,
 				A52B77DA2466091D00EE143E /* SceneDelegate.swift in Sources */,
+				A5FEC2A8246B6D9200DC607E /* Prospect.swift in Sources */,
 				A5FEC2A4246B6A9300DC607E /* ProspectsView.swift in Sources */,
 				A52B77DF2466091D00EE143E /* ContentView.swift in Sources */,
 				A52B77DD2466091D00EE143E /* HotProspects.xcdatamodeld in Sources */,
