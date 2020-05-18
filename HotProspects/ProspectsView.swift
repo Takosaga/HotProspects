@@ -17,6 +17,7 @@ struct ProspectsView: View {
     
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    
     let filter: FilterType
     
     var title: String {
@@ -51,6 +52,14 @@ struct ProspectsView: View {
                             .font(.headline)
                         Text(prospect.emailAddress)
                             .foregroundColor(.secondary)
+                        if self.filter == .none{
+                            if prospect.isContacted{
+                                Image(systemName: "person.crop.circle.fill.badge.checkmark")
+                            }
+                            else {
+                                Image(systemName: "person.crop.circle.badge.xmark")
+                            }
+                        }
                     }
                     .contextMenu {
                         Button(prospect.isContacted ? "Mark Uncontacted" : "Mark Contacted") {
