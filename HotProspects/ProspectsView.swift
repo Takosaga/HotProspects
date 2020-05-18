@@ -17,6 +17,7 @@ struct ProspectsView: View {
     
     @EnvironmentObject var prospects: Prospects
     @State private var isShowingScanner = false
+    @State private var isShowingSort = false
     
     let filter: FilterType
     
@@ -75,12 +76,19 @@ struct ProspectsView: View {
                 }
             }
                 .navigationBarTitle(title)
-                .navigationBarItems(trailing: Button(action: {
+                .navigationBarItems(leading: Button(action: {
                     self.isShowingScanner = true
                 }) {
                     Image(systemName: "qrcode.viewfinder")
                     Text("Scan")
-                })
+                    }, trailing: Button(action: {
+                        self.isShowingSort = true
+                    }) {
+                    Image(systemName: "arrow.up.arrow.down.square")
+                    Text("Sort")
+                    }
+            
+            )
                 .sheet(isPresented: $isShowingScanner) {
                     CodeScannerView(codeTypes: [.qr], simulatedData: "Gonzalo Gamez\ngonzalo.gamez@myhisd.net.com", completion: self.handleScan)
             }
